@@ -19,9 +19,11 @@
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
-        viewBox="0 0 24 24"3````
+        viewBox="0 0 24 24"
+        3````
         stroke-width="1.5"
         stroke="currentColor"
+        id="menuicon"
         class="size-6 w-6 h-6 md:hidden"
       >
         <path
@@ -40,8 +42,31 @@
         </li>
       </ul>
     </nav>
+    <!--Side navbar-->
+    <section
+      id="sidenav"
+      class="bg-green-100 fixed top-0 
+       z-20 transition-all duration-1000"
+      style="width: 50%; height: 100vh; right:-100%;"
+    >
+      <div class="text-right p-5">
+        <p id="close" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col gap-10 items-center text-gray-600">
+        <li class="hover:underline hover:text-black">
+          <a href="#">Home</a>
+        </li>
+        <li class="hover:underline hover:text-black">
+          <a href="./products.html">Products</a>
+        </li>
+        <li class="hover:underline hover:text-black">
+          <a href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </section>
+
     <!--Header Section-->
-    <section class="bg-green-100 flex justify-center p-4 md:p-10 ">
+    <section class="bg-green-100 flex justify-center p-4 md:p-10">
       <div>
         <p class="mb-4">
           We offer you a wide range of Natural and Artificial Flowers
@@ -137,61 +162,101 @@
       </div>
     </section>
     <!--Bestseller section-->
-    <section class="text-center p-5  ">
-      <h2 class="text-3xl font-bold mt-5 ">Best Seller</h2>
+    <section class="text-center p-5">
+      <h2 class="text-3xl font-bold mt-5">Best Seller</h2>
       <div class="grid grid-cols-2 mt-5 p-2 gap-5 md:grid-cols-4">
         <div>
-          <img src="./images/bestseller_1.png" alt="bestseller_1-img" class="inline hover:shadow-2xl transform hover:-translate-y-2" />
+          <img
+            src="./images/bestseller_1.png"
+            alt="bestseller_1-img"
+            class="inline hover:shadow-2xl transform hover:-translate-y-2"
+          />
           <h1>Rose Plant</h1>
           <p>$20</p>
         </div>
         <div>
-          <img src="./images/bestseller_2.png" alt="bestseller_2-img" class="inline hover:shadow-2xl transform hover:-translate-y-2" />
+          <img
+            src="./images/bestseller_2.png"
+            alt="bestseller_2-img"
+            class="inline hover:shadow-2xl transform hover:-translate-y-2"
+          />
           <h1>Snake plant</h1>
           <p>$15</p>
         </div>
         <div>
-          <img src="./images/bestseller_3.png" alt="bestseller_3-img" class="inline hover:shadow-2xl transform hover:-translate-y-2"/>
+          <img
+            src="./images/bestseller_3.png"
+            alt="bestseller_3-img"
+            class="inline hover:shadow-2xl transform hover:-translate-y-2"
+          />
           <h1>Spider plant</h1>
           <p>$15</p>
         </div>
         <div>
-          <img src="./images/bestseller_4.png" alt="bestseller_3-img" class="inline hover:shadow-2xl transform hover:-translate-y-2"/>
+          <img
+            src="./images/bestseller_4.png"
+            alt="bestseller_3-img"
+            class="inline hover:shadow-2xl transform hover:-translate-y-2"
+          />
           <h1>Money plant</h1>
           <p>$20</p>
         </div>
       </div>
     </section>
     <!--Reviews Section-->
-    <section class="m-5 flex flex-col gap-5 ">
+    <section class="m-5 flex flex-col gap-5">
       <h2 class="text-3xl font-bold text-center">Customer Reviews</h2>
       <div class="bg-green-900 text-white p-5">
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias magni tenetur quibusdam quia, delectus aperiam facere odit iusto sapiente, ipsa nam obcaecati. Repudiandae minima reprehenderit necessitatibus aliquam nihil dicta rerum!
-         </p>
-         <p class="text-yellow-300 font-bold">Genny Mathew</p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          magni tenetur quibusdam quia, delectus aperiam facere odit iusto
+          sapiente, ipsa nam obcaecati. Repudiandae minima reprehenderit
+          necessitatibus aliquam nihil dicta rerum!
+        </p>
+        <p class="text-yellow-300 font-bold">Genny Mathew</p>
       </div>
-      <div class="bg-green-900 text-white p-5 ">
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto amet expedita deserunt maiores, nobis quibusdam quod reiciendis animi cumque alias eius modi soluta quam nemo sit eaque obcaecati aliquid excepturi!</p>
-         <p class="text-yellow-300 font-bold">Jim</p>
+      <div class="bg-green-900 text-white p-5">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+          amet expedita deserunt maiores, nobis quibusdam quod reiciendis animi
+          cumque alias eius modi soluta quam nemo sit eaque obcaecati aliquid
+          excepturi!
+        </p>
+        <p class="text-yellow-300 font-bold">Jim</p>
       </div>
-      <div class="bg-green-900 text-white p-5 ">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nam quia at possimus omnis? Voluptates ullam cupiditate dolorum laudantium alias, harum qui aspernatur ab at laborum voluptate placeat dicta optio.</p>
+      <div class="bg-green-900 text-white p-5">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nam quia
+          at possimus omnis? Voluptates ullam cupiditate dolorum laudantium
+          alias, harum qui aspernatur ab at laborum voluptate placeat dicta
+          optio.
+        </p>
         <p class="text-yellow-300 font-bold">Amir</p>
       </div>
     </section>
     <!--News Letter-->
     <section class="text-center m-5">
       <h2 class="text-3xl font-bold">Join our News Letter</h2>
-      <p>Signup for our email newspaper for exclusive discounts, updates and more</p>
-      <input type="text" class="border border-black p-2 m-3" style="width:80%;">
-      <br>
+      <p>
+        Signup for our email newspaper for exclusive discounts, updates and more
+      </p>
+      <input
+        type="text"
+        class="border border-black p-2 m-3"
+        style="width: 80%"
+      />
+      <br />
       <button class="bg-black text-white p-2 underline">Subscribe</button>
     </section>
     <!--Footer-->
     <section class="bg-green-100 p-10 flex flex-col gap-5">
-      <h1 class="text-4xl font-bold ">Greenden</h1>
-      <p>The Standard chunk of Loreum ipsum used since 1500s is reproduced below for those interest</p>
+      <h1 class="text-4xl font-bold">Greenden</h1>
+      <p>
+        The Standard chunk of Loreum ipsum used since 1500s is reproduced below
+        for those interest
+      </p>
       <p>@2021 Greenday.com</p>
     </section>
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -22,6 +22,7 @@
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
+        id="menuicon"
         class="size-6 w-6 h-6 md:hidden"
       >
         <path
@@ -42,6 +43,28 @@
         </li>
       </ul>
     </nav>
+     <!--Side navbar-->
+    <section
+      id="sidenav"
+      class="bg-green-100 fixed top-0 
+       z-20 transition-all duration-1000"
+      style="width: 50%; height: 100vh; right:-100%;"
+    >
+      <div class="text-right p-5">
+        <p id="close" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col gap-10 items-center text-gray-600">
+        <li class="hover:underline hover:text-black">
+          <a href="#">Home</a>
+        </li>
+        <li class="hover:underline hover:text-black">
+          <a href="./products.html">Products</a>
+        </li>
+        <li class="hover:underline hover:text-black">
+          <a href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </section>
     <!--Contact form section-->
     <section class="bg-white dark:bg-gray-900">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -116,5 +139,6 @@
       </p>
       <p>@2021 Greenday.com</p>
     </section>
+    <script src="./contact.js"></script>
   </body>
 </html>
